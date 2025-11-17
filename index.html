@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>first Git repsoitory</title>
-</head>
-<body>
-    <h1>
-        Hello World--!
-    </h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tables & Forms</title>
+    </head>
+    <body>
 
-</body>
+        <table width="1000" border="2" cellpading="10">
+
+            <tr>
+
+                <th></th>
+                <th>Monday</th>
+                <th>tuesday</th>
+                <th>Wednesday</th>
+                <th>thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+
+            </tr>
+            <tr>
+                <th>9:00-10:00 am</th>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>English</td>
+                <td>OFF</td>
+                <td>OFF</td>
+            </tr>
+            <tr>
+                <th>10:00-11:00 am</th>
+                <td>Urdu</td>
+                <td>Urdu</td>
+                <td>Urdu</td>
+                <td>Urdu</td>
+                <td>Urdu</td>
+                <td>OFF</td>
+                <td>OFF</td>
+            </tr>
+            <tr>
+                <th>11:00 am-12:00 pm</th>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>OFF</td>
+                <td>OFF</td>
+            </tr>
+        </table>
+        <h1 align="center">Registration Form</h1><br>
+
+        <form action align="center">
+            <p>
+                Full Name : <br>
+                <input type="text" name="fullname" size="15" length="30">
+            </p>
+            <p>
+                Last Name :<br>
+                <input type="text" name="lastname" size="15" length="30">
+            </p>
+            <p>
+                Password : <br>
+                <input type="password" name="password" size="20" lenght="30">
+            </p>
+            <p>
+                Gender :
+                <input type="radio" name="Gender" value="Male"
+                    checked="checked"> Male
+                <input type="radio" name="Gender" value="female">female
+            </p>
+            <p>
+                Preference :
+                <input type="checkbox" name="Preference"
+                    value="Acrylic Painting"> Acrylic Painting
+                <input type="checkbox" name="Preference" value="oil Painting">
+                oil Painting
+                <input type="checkbox" name="Preference"
+                    value="water color Painting"> water color Painting
+            </p>
+            <p>
+                Occupation:
+                <select name="Occupation">
+                    <option value="Student">Student</option>
+                    <option value="Private Job">Private Job</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Owner">Owner</option>
+                </select>
+            </p>
+            <p>
+                Bio : <br>
+                <textarea name="Bio" cols="50"
+                    rows="5">explain your self...</textarea>
+            </p>
+            <p>
+                Upload your Resume :
+            </p>
+            <input type="file" name="Resume">
+            <input type="submit" value="Upload" />
+
+            <p>
+                <input type="submit" name="submit" value="submit">
+            </p>
+
+        </form>
+
+    </body>
 </html>
